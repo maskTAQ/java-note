@@ -15,11 +15,6 @@
     字符 char
     布尔 boolean
 
->强制类型状态
-
-    int number = 77;
-    (char) number //可以将变量number输出成char类型的值。输出M 因为M在Unicode表中的排序位置是77 也可以通过 (int) 'M' => 得到77
-
 >声明常量是必须复制否则报错
 
     final int TEST;//报错
@@ -34,3 +29,8 @@
     涉及到低类型项高类型的转换，系统会自动执行，下列等级表
     数值类型:byte<short<int<long<float<double
     byte b = 1;short s = 2;byte+short//结果类型为short，因为short类型比byte高
+
+>显式装换
+
+    int number = 77;
+    (char) number //可以将变量number输出成char类型的值。输出M 因为M在Unicode表中的排序位置是77 也可以通过 (int) 'M' => 得到77
