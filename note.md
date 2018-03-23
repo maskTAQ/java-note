@@ -12,7 +12,7 @@
 
     整数 byte short int long
     浮点 float double
-    字符 char
+    字符 char String
     布尔 boolean
 
 >声明常量是必须复制否则报错
@@ -34,3 +34,26 @@
 
     int number = 77;
     (char) number //可以将变量number输出成char类型的值。输出M 因为M在Unicode表中的排序位置是77 也可以通过 (int) 'M' => 得到77
+    
+## 2018-03-23
+
+>作用域
+
+    在java中可以只用{}(被包裹的称为复合语句)来实现单独的作用据。复合语句可以嵌套。
+
+>条件语句的{}
+    
+    条件语句中的语句只有一条时或没有时{}可以省略(不建议)，但是需要以分号结尾
+    ```java
+    boolean b = true;
+    if(b){int a;}
+    //去掉{}
+    if(v);
+    ```
+>foreach
+    
+    foreach并不是关键字。
+    ```java
+    int arr[] = {7,8,9};
+    foreach(int i : arr){}
+    ```
