@@ -15,7 +15,7 @@
     字符 char String
     布尔 boolean
 
->声明常量是必须复制否则报错
+>声明常量是必须赋值否则报错
 
     final int TEST;//报错
 
@@ -44,16 +44,29 @@
 >条件语句的{}
     
     条件语句中的语句只有一条时或没有时{}可以省略(不建议)，但是需要以分号结尾
-    ```java
-    boolean b = true;
-    if(b){int a;}
-    //去掉{}
-    if(v);
-    ```
+```java
+boolean b = true;
+if(b){int a;}
+//去掉{}
+if(v);
+```
 >foreach
     
     foreach并不是关键字。
-    ```java
-    int arr[] = {7,8,9};
-    foreach(int i : arr){}
-    ```
+```java
+int arr[] = {7,8,9};
+foreach(int i : arr){}
+```
+
+## 2018-03-25
+    
+>String为引用类型
+
+    与js不同的是在java中js是引用类型的值，用==(java中没有全等===,==与js中的===使用方式一致)比较俩个相同的字符串是返回false的
+```java
+String a = "str";
+String b = "Str";
+a == b;//false
+```
+    使用equals或者equalsIgnore方法来比较俩个字符串的内容是否相等。
+    
