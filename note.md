@@ -14,6 +14,9 @@
     浮点 float double
     字符 char String
     布尔 boolean
+    
+    2.引用类型的值
+    字符串 StringBuilder String
 
 >声明常量是必须赋值否则报错
 
@@ -70,3 +73,6 @@ a == b;//false
 ```
     使用equals或者equalsIgnore方法来比较俩个字符串的内容是否相等。
     
+>StringBuilder类
+
+    因为String为引用类型，所以频繁操作为增大内存的开销,使用此类可以高效的处理字符串。

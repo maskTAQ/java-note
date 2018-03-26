@@ -9,11 +9,14 @@ public class Main {
     //public、static权限修饰符 void返回值修饰符 String[] args字符串类型的数组
     public static void main(String[] args) {
         //局部变量
-        int vv = '1';
+        int vv = 1;
         int number = 77;
         char M = 'M';
-        System.out.println("args:" + args);
+        String c = String.format("%b",3>5);
+        System.out.println( c.getClass().toString());
         System.out.println(v == vv);
+
+        System.out.println(new StringBuilder("") == new StringBuilder(""));
         System.out.println((int) 'M');
     }
 }
