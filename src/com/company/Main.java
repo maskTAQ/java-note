@@ -2,6 +2,8 @@
 //文件名需要与类名同名
 package com.company;
 
+import java.lang.reflect.Array;
+
 public class Main {
     //成员变量/全局变量
     static int v = 1;
@@ -18,5 +20,9 @@ public class Main {
 
         System.out.println(new StringBuilder("") == new StringBuilder(""));
         System.out.println((int) 'M');
+
+        int arr[] = new int[]{0,2,2,3};
+        int index = java.util.Arrays.binarySearch(arr,0,1,11);
+        System.out.println(index);
     }
 }
